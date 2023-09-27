@@ -508,7 +508,7 @@ footer p span {
     height: 100vh;
     background: #000000 url("./assets/cone-gif.gif") no-repeat center center;
     z-index: 300;
-    background-size: 10%;
+    background-size: min(50%, 300px);
     animation: load 2s infinite linear;
     background-repeat: no-repeat;
  
