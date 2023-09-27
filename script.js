@@ -58,3 +58,12 @@ function clickMenu() {
   
 
 }
+
+//loading
+
+function loading() {
+    
+  document.getElementsByClassName("loading-box")[0].style.display = "none";
+  document.getElementsByClassName("content-box")[0].style.display = "block";
+
+}
