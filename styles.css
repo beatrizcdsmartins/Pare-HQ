@@ -123,7 +123,7 @@ nav a {
 
 .add-now-btn {
     background-color: var(--yellow);
-    max-width: clamp(100px, 50%, 300px);
+    max-width: clamp(200px, 50%, 300px);
     text-align: center;
     text-decoration: none;
     color: var(--white);
@@ -133,6 +133,7 @@ nav a {
     border: 1px solid white;
     text-transform: uppercase;
     font-weight: 600;
+
 }
 
 /* INFOS */
@@ -164,6 +165,9 @@ nav a {
     font-weight: 600;
 }
 
+
+
+
 /* SINOPSE */
 
 .container-sinopse {
@@ -192,7 +196,7 @@ nav a {
 
 .add-btn-red {
     background-color: var(--red);
-    width: clamp(100px, 50%, 300px);
+    width: clamp(100px, 50%, 300px) ;
 }
 .container-left-sinopse{
     width: 50%;
@@ -202,8 +206,9 @@ nav a {
    
 }
 .container-sinopse img {
-    
+
     width: clamp(80%, 2vw,700px);
+    padding: 15px 0;
 }
 
 .sinopse {
@@ -219,14 +224,6 @@ nav a {
 
 }
 
-
-/* MAIS SOBRE O PROJETO */
-
-.more-about-the-project-container {
-    background-image: url(./assets/background_slider_maisDoProjeto.png);
-}
-
-
 /* ADQUIRIR Já */
 .purchase-now {
     display: flex;
@@ -241,6 +238,7 @@ nav a {
     padding: 60px;
 
 }
+
 
 .purchase-now div h1 {
     font-size: clamp(48px, 10vw, 100px);
@@ -289,6 +287,8 @@ nav a {
     flex-direction: column;
     max-width: 500px;
     gap: 30px;
+    padding: 0 20px; 
+
 }
 
 .text-container-printed-book strong {
@@ -302,7 +302,7 @@ nav a {
 }
 
 .price {
-    font-size: 96px;
+    font-size: min(96px, 20vw);
     font-weight: bold;
 
 }
@@ -424,6 +424,7 @@ form div input, textarea{
 textarea, input{
     height: 200px;
     padding-left:10px;
+    border: none !important;
 }
 
 textarea{
@@ -501,6 +502,7 @@ footer p span {
 
 }
 
+
 @media screen  and (max-width:1200px){
 
     .mobileMenu{
@@ -543,21 +545,19 @@ footer p span {
         flex-direction: column-reverse;
     }
     .purchase-now, .printed-book{
-        flex-direction: column;
-        
+        flex-direction: column;  
     }
-
     .add-btn-red{
         margin: 0 auto;
+    }
+
+    .sinopse p, .container-img-purchase{
+        padding: 20px 10px;
     }
 
     .container-left-purchase, .container-right-sinopse{
         text-align: center;
     }
-    .container-left-sinopse{
-        padding: 50px;
-    }
-
 
     .text-container-printed-book{
         text-align: center;
