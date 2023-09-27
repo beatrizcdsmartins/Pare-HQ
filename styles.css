@@ -502,35 +502,16 @@ footer p span {
 
 }
 
-@keyframes load {
-    to {
-        transform: rotate(360deg);
-    }
-
-}
-
-.loading {
-    width: 100px;
-    height: 100px;
-    background-image: url("./assets/cone.svg");
-    background-position: center;
-    background-size: contain;
-    animation: load 2s infinite linear;
-    z-index: 500000 !important;
-    background-repeat: no-repeat;
-
-}
-
-.loading-box {
-    position: absolute;
+#preloader{
+    position: fixed;
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000;
-    z-index: 500000 !important;
-
+    height: 100vh;
+    background: #000000 url("./assets/cone-gif.gif") no-repeat center center;
+    z-index: 300;
+    background-size: 10%;
+    animation: load 2s infinite linear;
+    background-repeat: no-repeat;
+ 
 }
 
 @media screen  and (max-width:1200px){
