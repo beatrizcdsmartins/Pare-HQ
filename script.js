@@ -61,7 +61,15 @@ function clickMenu() {
 
 //loading
 
-let loader =document.getElementById("preloader");
-window.addEventListener("load", function(){
+let loader = document.getElementById("preloader");
+
+// Defina um temporizador para ocultar o preloader após 5 segundos (5000 milissegundos)
+let timer = setTimeout(function () {
   loader.style.display = "none";
-})
+}, 5000); // 5000 milissegundos = 5 segundos
+
+window.addEventListener("load", function () {
+  // Quando a página terminar de carregar antes dos 5 segundos, cancele o temporizador
+  clearTimeout(timer);
+  loader.style.display = "none";
+});
